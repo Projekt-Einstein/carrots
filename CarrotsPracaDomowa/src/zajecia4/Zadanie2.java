@@ -6,33 +6,25 @@ package zajecia4;
 public class Zadanie2 {
 
     public static void main(String[] args) {
-        /////////
-        // for //
-        ////////
-        for (int i = 0; i < 100; i++) {
-            System.out.println(i);
+        int[] tab1 = {-1, 2, -3, 4, 10};
+        int[] tab2 = {-10, 12, -3, 23, 14};
+        int[] tab3 = {-10, 120, -300, 21, 12};
+
+        System.out.println(findMin(tab1));
+        System.out.println(findMin(tab2));
+        System.out.println(findMin(tab3));
+    }
+
+    private static int findMin(int[] tab) {
+        int min = tab[0];
+
+        for (int elem : tab) {
+            if (min > elem) {
+                min = elem;
+            }
         }
 
-        int i = 0;
-
-        ///////////
-        // while //
-        ///////////
-        while (i < 100) {
-            System.out.println(i);
-            i++;
-        }
-
-        i = 0;
-
-        //////////////
-        // do-while //
-        //////////////
-        do {
-            System.out.println(i);
-            i++;
-
-        } while (i < 100);
+        return min;
     }
 
 }

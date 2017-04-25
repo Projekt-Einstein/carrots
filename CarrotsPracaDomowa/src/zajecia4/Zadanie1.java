@@ -1,34 +1,24 @@
 package zajecia4;
 
 /**
- * Poniższy kod przekształć tak aby korzystał z pętli
- * a.  while
- * b.  do-while
- * for (int i = 0; i < 100; i++) {
- *    System.out.println("Iteracja numer: " + i);
- * }
- *
  * @author Dominik C.
  */
 public class Zadanie1 {
-
     public static void main(String[] args) {
-        //petla while
+        int[] tab = {1, 3, 4, 5, 6};
+        System.out.println(findMax(tab));
+    }
 
-        int i = 0;
-
-        while (i < 100) {
-            System.out.println("Iteracja numer: " + i);
-            i++;
+    private static int findMax(int[] tab) {
+        int max = tab[0];
+        for (int elem : tab) {
+            if (max < elem) {
+                max = elem;
+            }
         }
 
-        i = 0;
-
-        do {
-            System.out.println("Iteracja numer: " + i);
-            i++;
-
-        } while (i < 100);
+        return max;
     }
+
 
 }

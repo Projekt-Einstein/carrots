@@ -1,4 +1,4 @@
-package zajecia4;
+package zajecia3;
 
 /**
  * @author Dominik C.
