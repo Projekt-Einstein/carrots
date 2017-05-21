@@ -16,7 +16,7 @@ public class Main {
 //            }
 //        }); //Starszy sposob
 
-        SwingUtilities.invokeLater(() -> new CoordinateFrame());
+        SwingUtilities.invokeLater(() -> new Test());
     }
 
 }
